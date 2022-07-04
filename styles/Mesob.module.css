@@ -1,0 +1,23 @@
+.mesob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 100%;
+    position: relative;
+    transition: width 0.3s ease;
+}
+.mesob:hover{
+    cursor: pointer;
+    width: 280px;
+    transition: width 0.3s ease;
+}
+.cap{
+    object-fit: contain;
+    width: 100%;
+    z-index: 99;
+}
+.body{
+    object-fit: contain;
+    width: 100%;
+}
