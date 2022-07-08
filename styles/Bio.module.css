@@ -1,0 +1,39 @@
+.bio{
+    width: 60%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.bioBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.bioBox > h3{
+    font-size: large;
+    font-weight: 300;
+    margin-bottom: 0px;
+    text-decoration: underline 2px #fff;
+    text-underline-offset: 3px;
+}
+.bioBox > p{
+    font-size: medium;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.bioBox > p > span {
+    color: #ffa;
+}
+
+
+@media screen and (max-width: 480px) {
+    .bio{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.bio{
+        width: 80%;
+    }
+}

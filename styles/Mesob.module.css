@@ -2,22 +2,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 250px;
-    height: 100%;
+    align-items: center;
+    width: 16vw;
     position: relative;
-    transition: width 0.3s ease;
-}
-.mesob:hover{
-    cursor: pointer;
-    width: 280px;
     transition: width 0.3s ease;
 }
 .cap{
     object-fit: contain;
     width: 100%;
     z-index: 99;
+    position: relative;
+    top: 5%;
 }
 .body{
     object-fit: contain;
     width: 100%;
 }
+
+@media (max-width: 480px){
+    .mesob{
+        width: 46vw;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .mesob{
+        width: 25vw;
+    }
+}
+
+/*
+@media screen and (max-width: 1280px){
+    .mesob{
+        width: 200px;
+    }
+} */

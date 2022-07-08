@@ -1,0 +1,83 @@
+.message{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+.input{
+    width: 48%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+.txt{
+    width: 90%;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+.btn{
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.m_done{
+    width: 90%;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c5;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .message{
+        width: 90%;
+    }
+    .input{
+        width: 100%;
+    }
+    .txt{
+        width: 100%;
+    }
+    .btn{
+        width: 40%;
+    }
+    .m_done{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.message{
+        width: 80%;
+    }
+    /* .input{
+        width: 100%;
+    }
+    .txt{
+        width: 100%;
+    } */
+    .btn{
+        width: 30%;
+    }
+    .m_done{
+        width: 100%;
+    }
+}
