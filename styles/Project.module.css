@@ -18,6 +18,12 @@
     z-index: 2;
     border-radius: 0;
 }
+.p_name{
+    flex: 1;
+    margin-left: 5px;
+    font-size: small;
+    font-weight: 200;
+}
 .p_circle{
     width: 6px;
     height: 6px;

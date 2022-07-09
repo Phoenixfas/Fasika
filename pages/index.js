@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 import Tibeb from "../components/Tibeb";
 import Mesob from "../components/Mesob";
 import Modal from "../components/Modal";
+import TibebDiag from "../components/TibebDiag";
 
 const greetVariants = {
   hidden: {
@@ -60,6 +61,7 @@ export default function Home() {
         onClick={mesobOpen ? setMesobOpen : null}
       />
       <Tibeb />
+      <TibebDiag />
       <AnimatePresence>
         {greetingShown && (
           <motion.div

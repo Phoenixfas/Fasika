@@ -1,13 +1,19 @@
+import { motion } from "framer-motion";
 import style from "../styles/Profile.module.css";
 
 export default function Profile() {
   return (
-    <div className={style.profile}>
+    <motion.div
+      className={style.profile}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 1.5 }}
+    >
       <img src="/images/menu/Profile.jpg" alt="Profile" />
       <div className={style.profileDetail}>
         <h3>Fasika Dagnachew</h3>
-        <p>Digital Craftzman ( Developer / Designer / 3D Artist )</p>
+        <p>Digital Craftsman ( Developer / Designer / 3D Artist )</p>
       </div>
-    </div>
+    </motion.div>
   );
 }

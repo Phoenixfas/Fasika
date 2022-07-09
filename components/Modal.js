@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import useStore from "../store/store";
 import { motion, AnimatePresence } from "framer-motion";
 import style from "../styles/Modal.module.css";
+import projects from "../data/projects";
 import Project from "./Project";
 import Profile from "./Profile";
 import Bio from "./Bio";
@@ -72,16 +73,21 @@ export default function Modal() {
             >
               <img src="/images/menu/close.png" alt="close" />
             </motion.div>
-            <div className={style.header}>
+            <motion.div
+              className={style.header}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+            >
               <h3>Hello I&apos;m a full-stack developer based in Ethiopia! </h3>
-            </div>
+            </motion.div>
             <Profile />
             <Bio />
             <h3> Demo Projects </h3>
             <div className={style.container}>
-              <Project />
-              <Project />
-              <Project />
+              {projects.map((project) => (
+                <Project key={project.id} project={project} />
+              ))}
             </div>
             <h3> Get In Touch </h3>
             <Message />

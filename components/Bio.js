@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import style from "../styles/Bio.module.css";
 
 export default function Bio() {
   return (
-    <div className={style.bio}>
+    <motion.div
+      className={style.bio}
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 1.8 }}
+    >
       <div className={style.bioBox}>
         <h3>Work</h3>
         <p>
@@ -34,6 +40,6 @@ export default function Bio() {
           Coding
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

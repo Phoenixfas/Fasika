@@ -59,12 +59,16 @@ export default function Mesob() {
       <motion.img
         src="/images/Cap.svg"
         alt="Mesob"
-        className={styles.cap}
+        className={mesobOpen ? styles.capBlur : styles.cap}
         variants={variants}
         initial="initial"
         animate={mesobOpen ? "anim1" : "anim2"}
       />
-      <img src="/images/Body.svg" alt="Mesob" className={styles.body} />
+      <img
+        src="/images/Body.svg"
+        alt="Mesob"
+        className={mesobOpen ? styles.bodyBlur : styles.body}
+      />
     </motion.div>
   );
 }

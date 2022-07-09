@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import useStore from "../store/store";
-import Image from "next/image";
 import styles from "../styles/Tibeb.module.css";
 
 export default function Tibeb() {
@@ -18,12 +17,10 @@ export default function Tibeb() {
 
   return (
     <div className={styles.container} onClick={mesobOpen ? setMesobOpen : null}>
-      <Image
+      <img
         src="/images/Tilet.svg"
         alt="Tibeb"
-        layout="fill"
-        className={styles.tibeb}
-        priority={true}
+        className={mesobOpen ? styles.tibebBlur : styles.tibeb}
       />
     </div>
   );
