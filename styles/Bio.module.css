@@ -3,6 +3,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 .bioBox{
     display: flex;
@@ -25,6 +26,7 @@
 .bioBox > p > span {
     color: #ffa;
 }
+
 
 
 @media screen and (max-width: 480px) {

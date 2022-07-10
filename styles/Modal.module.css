@@ -17,7 +17,7 @@
 .modal > h3{
     font-size: 25px;
     font-weight: 200;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 .closeBtn{
     width: 30px;
@@ -42,6 +42,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 70%;
+    margin-bottom: 30px;
 }
 .header{
     color: #fff;

@@ -89,6 +89,13 @@ export default function Modal() {
                 <Project key={project.id} project={project} />
               ))}
             </div>
+            <hr
+              style={{
+                width: "80%",
+                border: "none",
+                borderTop: "1px solid #777",
+              }}
+            />
             <h3> Get In Touch </h3>
             <Message />
             <Socials />

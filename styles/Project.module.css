@@ -6,6 +6,20 @@
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     background-color: #fff;
+    transition: width .3s ease-in-out;
+    animation: float alternate 1s ease-in-out infinite;
+}
+@keyframes float{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+.p:hover{
+    width: 30%;
+    transition: width .3s ease-in-out;
 }
 .p_browser{
     height: 20px;

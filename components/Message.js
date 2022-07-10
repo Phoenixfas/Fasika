@@ -37,14 +37,14 @@ export default function Message() {
         <input
           className={style.input}
           type="text"
-          placeholder="Subject"
-          name="user_subject"
+          placeholder="Email"
+          name="user_email"
         />
         <input
           className={style.input}
           type="text"
-          placeholder="Email"
-          name="user_email"
+          placeholder="Subject"
+          name="user_subject"
         />
         <textarea
           className={style.txt}
@@ -52,7 +52,7 @@ export default function Message() {
           name="message"
           rows="5"
         />
-        <button className={style.btn}>Submit</button>
+        <button className={style.btn}>Send</button>
         {done && (
           <p className={style.m_done}>Your message has been sent. Thank you!</p>
         )}
