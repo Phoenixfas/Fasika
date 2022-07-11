@@ -13,6 +13,13 @@ const projects = [
     url: "http://zeye.epizy.com/",
     image: "/images/demo/zeye.png",
   },
+  {
+    id: 3,
+    name: "Proj-Mgmt",
+    description: "App for managing clients and projects",
+    url: "https://project-manage.netlify.app/",
+    image: "/images/demo/project_mgmt.png",
+  },
 ];
 
 export default projects;
