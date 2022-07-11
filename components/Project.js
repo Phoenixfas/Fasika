@@ -9,7 +9,7 @@ export default function Project({ project, id }) {
         <div className={style.p_circle}></div>
         <div className={style.p_circle}></div>
       </div>
-      <a href={project.url} target="_blank" rel="noopener noreferrer">
+      <a href={project.url} target="_blank" rel="noreferrer">
         <img src={project.image} alt="" className={style.p_img} />
       </a>
     </div>

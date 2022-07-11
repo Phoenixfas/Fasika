@@ -59,10 +59,18 @@
         width: 60%;
         height: 200px;
     }
+    .p:hover{
+        width: 65%;
+        transition: width .3s ease-in-out;
+    }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	.p{
         width: 40%;
         height: 200px;
+    }
+    .p:hover{
+        width: 45%;
+        transition: width .3s ease-in-out;
     }
 }

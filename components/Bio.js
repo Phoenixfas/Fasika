@@ -34,6 +34,13 @@ export default function Bio() {
         </p>
       </div>
       <div className={style.bioBox}>
+        <h3>Proficiency</h3>
+        <p className={style.skill}>
+          Html, CSS, Javascript, React, React-Native, Node, Express, MongoDB,
+          GraphQL
+        </p>
+      </div>
+      <div className={style.bioBox}>
         <h3>I ❤</h3>
         <p>
           Music, Watching Movies, Playing Games, Photography, 3d Animating,

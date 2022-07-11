@@ -7,8 +7,6 @@ import styles from "../styles/Mesob.module.css";
 export default function Mesob() {
   const setMesobOpen = useStore((state) => state.setMesobOpen);
   const mesobOpen = useStore((state) => state.mesobOpen);
-
-  const modalVisible = useStore((state) => state.modalVisible);
   const setModalVisible = useStore((state) => state.setModalVisible);
 
   useEffect(() => {
