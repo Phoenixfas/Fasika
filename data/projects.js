@@ -8,6 +8,7 @@ const projects = [
     url: "https://project-manage.netlify.app/",
     image: "/images/demo/project_mgmt.png",
   },
+/*
 {
     id: 2,
     name: "Zeye",
@@ -15,6 +16,7 @@ const projects = [
     url: "http://zeye.epizy.com/",
     image: "/images/demo/zeye.png",
   },
+*/
 {
     id: 3,
     name: "Youtube",
